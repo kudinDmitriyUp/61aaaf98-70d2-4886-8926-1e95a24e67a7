@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
@@ -13,7 +13,7 @@ import BlogCardSix from '@/components/sections/blog/BlogCardSix';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import ContactMedia from '@/components/sections/contact/ContactMedia';
 import FooterBaseSocial from '@/components/sections/footer/FooterBaseSocial';
-import { Sparkles, Shield, Star, Newspaper, ShoppingBag, Globe, Users, Instagram, Facebook, Twitter, Pinterest, Youtube } from "lucide-react";
+import { Sparkles, Shield, Star, Newspaper, ShoppingBag, Globe, Users, Instagram, Facebook, Twitter, Youtube } from "lucide-react";
 
 export default function StyleHubPage() {
   return (
@@ -473,7 +473,6 @@ export default function StyleHubPage() {
             { icon: Instagram, href: "https://instagram.com", ariaLabel: "Instagram" },
             { icon: Facebook, href: "https://facebook.com", ariaLabel: "Facebook" },
             { icon: Twitter, href: "https://twitter.com", ariaLabel: "Twitter" },
-            { icon: Pinterest, href: "https://pinterest.com", ariaLabel: "Pinterest" },
             { icon: Youtube, href: "https://youtube.com", ariaLabel: "YouTube" }
           ]}
           copyrightText="© 2025 StyleHub. All rights reserved."
