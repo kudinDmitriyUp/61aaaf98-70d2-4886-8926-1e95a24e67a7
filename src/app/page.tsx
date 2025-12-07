@@ -13,7 +13,7 @@ import BlogCardSix from '@/components/sections/blog/BlogCardSix';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import ContactMedia from '@/components/sections/contact/ContactMedia';
 import FooterBaseSocial from '@/components/sections/footer/FooterBaseSocial';
-import { Sparkles, Shield, Star, Newspaper, ShoppingBag, Globe, Users, Instagram, Facebook, Twitter, Youtube } from "lucide-react";
+import { Sparkles, Shield, Star, Newspaper, ShoppingBag, Globe, Users, Instagram, Facebook, Twitter, Youtube, Pinterest } from "lucide-react";
 
 export default function StyleHubPage() {
   return (
@@ -32,17 +32,17 @@ export default function StyleHubPage() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765120844738-2fbohg7j.jpg"
-          logoAlt="Fashion Brand Logo"
+          logoAlt="StyleHub Fashion Brand Logo"
           brandName="StyleHub"
           navItems={[
-            { name: "Collections", id: "collections" },
+            { name: "Collections", id: "products" },
             { name: "About", id: "about" },
             { name: "FAQ", id: "faq" },
             { name: "Contact", id: "contact" }
           ]}
           button={{
             text: "Shop Now",
-            href: "collections"
+            href: "products"
           }}
           className="rounded-full"
           navItemClassName="text-foreground hover:text-primary-cta transition"
@@ -57,7 +57,7 @@ export default function StyleHubPage() {
           description="Discover our curated collection of premium clothing designed for the modern individual. From timeless classics to contemporary trends, find pieces that express your unique identity."
           tags={["Premium Quality", "Sustainable Fashion", "Free Shipping", "Fast Returns"]}
           buttons={[
-            { text: "Explore Collection", href: "collections" },
+            { text: "Explore Collection", href: "products" },
             { text: "View New Arrivals", href: "products" }
           ]}
           showcaseImageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765120846793-u52d7kx6.jpg"
@@ -88,28 +88,28 @@ export default function StyleHubPage() {
               id: "prod-1",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765120852301-2bwcpc4f.jpg",
               imageAlt: "Premium dress clothing",
-              button: { text: "Add to Cart", id: "add-prod-1" },
+              button: { text: "Add to Cart" },
               isFavorited: false
             },
             {
               id: "prod-2",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765120856650-b5nrsdas.jpg",
               imageAlt: "Stylish jacket",
-              button: { text: "Add to Cart", id: "add-prod-2" },
+              button: { text: "Add to Cart" },
               isFavorited: false
             },
             {
               id: "prod-3",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765120859474-w1tr1j0h.jpg",
               imageAlt: "Casual wear shirt",
-              button: { text: "Add to Cart", id: "add-prod-3" },
+              button: { text: "Add to Cart" },
               isFavorited: false
             },
             {
               id: "prod-4",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765120852301-2bwcpc4f.jpg",
               imageAlt: "Fashion piece",
-              button: { text: "Add to Cart", id: "add-prod-4" },
+              button: { text: "Add to Cart" },
               isFavorited: false
             }
           ]}
@@ -131,8 +131,8 @@ export default function StyleHubPage() {
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765120862220-t70w7po5.jpg"
           imageAlt="Fashion brand team and workspace"
           buttons={[
-            { text: "Learn Our Story", href: "#" },
-            { text: "Shop Collection", href: "collections" }
+            { text: "Learn Our Story", href: "about" },
+            { text: "Shop Collection", href: "products" }
           ]}
           useInvertedBackground="noInvert"
           className="w-full"
@@ -172,7 +172,7 @@ export default function StyleHubPage() {
               content: "Each garment undergoes rigorous quality checks before shipping. We maintain a 100% satisfaction guarantee on all our products."
             }
           ]}
-          buttons={[{ text: "Explore Values", href: "#" }]}
+          buttons={[{ text: "Explore Values", href: "about" }]}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765120877895-whg55ord.jpg"
           imageAlt="Premium fabric quality showcase"
           useInvertedBackground="noInvert"
@@ -414,7 +414,7 @@ export default function StyleHubPage() {
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1765120886103-3e0vjpqa.jpg"
           imageAlt="Join our fashion community"
           buttons={[
-            { text: "Get in Touch", href: "#contact-form" },
+            { text: "Get in Touch", href: "contact" },
             { text: "Subscribe to Newsletter", href: "#newsletter" }
           ]}
           useInvertedBackground="noInvert"
@@ -435,7 +435,7 @@ export default function StyleHubPage() {
             {
               title: "Shop",
               items: [
-                { label: "All Collections", href: "collections" },
+                { label: "All Collections", href: "products" },
                 { label: "New Arrivals", href: "products" },
                 { label: "Best Sellers", href: "#" },
                 { label: "Sale", href: "#" }
@@ -473,7 +473,8 @@ export default function StyleHubPage() {
             { icon: Instagram, href: "https://instagram.com", ariaLabel: "Instagram" },
             { icon: Facebook, href: "https://facebook.com", ariaLabel: "Facebook" },
             { icon: Twitter, href: "https://twitter.com", ariaLabel: "Twitter" },
-            { icon: Youtube, href: "https://youtube.com", ariaLabel: "YouTube" }
+            { icon: Youtube, href: "https://youtube.com", ariaLabel: "YouTube" },
+            { icon: Pinterest, href: "https://pinterest.com", ariaLabel: "Pinterest" }
           ]}
           copyrightText="© 2025 StyleHub. All rights reserved."
           className="w-full bg-background"
